@@ -18,4 +18,4 @@ def scrapp_nbt(date):
 
 @app.get("/nbt")
 def read_root():
-    return scrapp_nbt("2021-05-25")
+    return scrapp_nbt(str(datetime.now().year) + "-" + str(datetime.now().month) + "-" + str(datetime.now().day))
